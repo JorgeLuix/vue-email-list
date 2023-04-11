@@ -10,13 +10,13 @@
     <title>EmailList</title>
 </head>
 <body>
-    <div id="app" class="">
+    <div id="app" class="container">
         <div class="container">
           <h1>{{titolo}}</h1>
           <button class="btn btn-success" @click="getData">Email Random</button>
           <div class="row">
             <div class="col-md-4" v-for="(email, index) in randomEmail" :key="index">
-              <div class="card">
+              <div class="card m-3">
                 <img :src="getRandomImage()" alt="Random Image">
                 <div class="card-body">
                   <h5 class="card-title">{{ email }}</h5>
