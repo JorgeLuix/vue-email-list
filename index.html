@@ -13,7 +13,7 @@
     <div id="app" class="container">
         <div class="container">
           <h1>{{titolo}}</h1>
-          <button class="btn btn-success" @click="getData">Email Random</button>
+          <button class="btn btn-success" @click="generateEmail">Email Random</button>
           <div class="row">
             <div class="col-md-4" v-for="(email, index) in randomEmail" :key="index">
               <div class="card m-3">

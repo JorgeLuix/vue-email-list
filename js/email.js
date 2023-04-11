@@ -22,13 +22,12 @@ createApp({
     }
 },
 methods: {
-    getData(){
+    generateEmail(){
         this.randomEmail = [];
         for (let i=0; i < 10; i++ ) {
             axios.get(this.basePath + 'random/mail').then((res) => {
                 this.randomEmail.push(res.data.response);
         });
-       
       } 
     },
     getRandomImage() {//asegnare una immagine random a ogni mail.
@@ -36,7 +35,7 @@ methods: {
     }
  },
  mounted(){
-  //this.getData();
+  //this.generateEmail();
  },
      
     
